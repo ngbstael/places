@@ -1,0 +1,16 @@
+{
+  "name": "default",
+  "type": "postgres",
+  "host": "db",
+  "port": 5432,
+  "username": "root",
+  "password": "root",
+  "database": "digital_life_places",
+  "entities": ["src/db/models/*.js"],
+  "migrations": ["src/db/migrations/*{.ts,.js}"],
+  "cli": { 
+    "migrationsDir": "src/db/migrations"
+  },
+  "logging": true,
+  "synchronize": true
+}
